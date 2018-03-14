@@ -3,17 +3,23 @@ title: "Data Quality Control and Assurance"
 author: DataONE Community Engagement & Outreach Working Group
 update: Sept. 22, 2016
 layout: slides
-tags: [Data Management, Assure, QAQC]
-categories: [Teaching Module]
+tags: ["Data Management", Assure, QAQC, Collect]
+categories: ["Teaching Module"]
 status: published
+prevlesson: 04_entry
+nextlesson: 06_protect
+handout: L05_DataQualityAssurance_Handout.pdf
+ppt: L05_DataQualityAssurance.pptx
+exercise: L05_Exercise.pdf
+datafiles: DataFiles_L04L05L07L08.zip 
+
 
 ---
 
 # Lesson Topics
 
-.one-half[
 Definitions
-* Quality assurance and Quality control
+* Quality assurance and quality control
 * Data contamination
 * Types of errors
 
@@ -21,12 +27,7 @@ QA/QC best practices
 * Before data collection
 * During data collection/entry
 * After data collection/entry
-]
 
-.one-half[
-.center[![CC image by cobalt123 on Flickr](images/image5.jpeg)
-*CC image by cobalt123 on Flickr*]
-]
 
 ???
 
@@ -42,8 +43,6 @@ After completing this lesson, the participant will be able to:
 * Perform quality control and assurance on their data at all stages of the research cycle
 
 
-.center[![CC image by 0xFCAF on Flickr](images/image6.jpeg)
-*CC image by 0xFCAF on Flickr*]
 
 ???
 
@@ -55,7 +54,7 @@ After completing this module, you will be able to define quality control and qua
 
 .center[
 ![DataONE Life Cycle](images/DataONE Module 5 Life Cycle.png)
-*DataONE Life Cycle*]
+]
 
 ???
 
@@ -65,12 +64,12 @@ Quality control and quality assurance should be implemented throughout the data 
 
 # Definitions
 
-Data Contamination:
+Data Contamination
 * Process or phenomenon, other than the one of interest, that affects the variable value 
 * Erroneous values
 
-.center[![CC image by Michael Coghlan on Flickr](images/image7.jpeg)]
-
+.center[![CC image by Michael Coghlan on Flickr](images/image7.jpeg)
+*CC image by Michael Coghlan on Flickr*]
 ???
 
 Before describing best practices useful for quality control and assurance, we will define some related terms. Data contamination results from a process or phenomenon, other than the one of interest, which can affect the variable values. Data contamination results in erroneous values in the data set.
@@ -78,14 +77,18 @@ Before describing best practices useful for quality control and assurance, we wi
 ---
 
 # Definitions: Types of Errors
+
 Errors of Commission
+
 * Incorrect or inaccurate data entered
 * Examples: malfunctioning instrument, mistyped data
+
 Errors of Omission
+
 * Data or metadata not recorded
 * Examples: inadequate documentation, human error, anomalies in the field
 
-.center[![CC image by Nick J Webb on Flickr](images/image8.jpeg)
+.center[![CC image by Nick J Webb on Flickr](images/rsz_image8.jpg)
 *CC image by Nick J Webb on Flickr*]
 
 ???
@@ -155,11 +158,11 @@ Consider using techniques that help eliminate mistakes during data entry. Exampl
 
 # QA/QC  During Data Entry
 
-Design data storage well:
+Design data storage will:
 * Minimize number of times items that must be entered repeatedly
 * Use consistent terminology
 * Atomize data: one cell per piece of information
-Document changes to data
+document changes to data
 * Avoids duplicate error checking
 * Allows undo if necessary
 
@@ -191,7 +194,7 @@ Once data are entered, basic quality assurance measures can be taken. First, if 
 
 # QA/QC  After Data Entry
 
-Look for outliers:
+Look for outliers
 * Outliers are extreme values for a variable given the statistical model being used
 * The goal is not to eliminate outliers but to identify potential data contamination
 
@@ -256,10 +259,10 @@ It is important to define and enforce quality assurance and quality control stan
 ---
 
 # About
-Participate in our GitHub repo: [https://dataoneorg.github.io/dataone_lessons/](https://dataoneorg.github.io/dataone_lessons/)
+Participate in our GitHub repo: [https://github.com/DataONEorg/Education](https://github.com/DataONEorg/Education)
 
 **Suggested citation:**
-DataONE Education Module: Data Management. DataONE. Retrieved November 12, 2016. From [http://www.dataone.org/sites/all/documents/L01_DataManagement.pptx](http://www.dataone.org/sites/all/documents/L01_DataManagement.pptx)
+DataONE Education Module: Data Quality Control and Assurance. DataONE. Retrieved November 12, 2016. From [https://dataoneorg.github.io/Education/](https://dataoneorg.github.io/Education/)
 
 **Copyright license information:**
 No rights reserved; you may enhance and reuse for your own purposes.  We do ask that you provide appropriate citation and attribution to DataONE.

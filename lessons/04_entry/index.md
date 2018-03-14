@@ -1,11 +1,18 @@
 ---
-title: "Data Entry, and Manipulation"
+title: "Data Entry and Manipulation"
 author: DataONE Community Engagement & Outreach Working Group
-update: March 29 2017
+update: March 27 2017
 layout: slides
-tags: [Data Management, Collect]
-categories: [Teaching Module]
 status: published
+tags: ["Data Management", Collect, Integrate]
+categories: ["Teaching Module" ]
+prevlesson: 03_planning
+nextlesson: 05_qaqc
+exercise: L04_Exercise.pdf
+handout: L04_DataEntry_Handout.pdf
+ppt: L04_DataEntry.pptx
+datafiles: DataFiles_L04L05L07L08.zip 
+
 ---
 
 ## Lesson Topics
@@ -77,7 +84,7 @@ To analyze all these data using statistical software, and to make it much easier
 
 .full-width[
 * Columns of data are consistent: only numbers, dates, or text
-* Consistent Names, Codes, Formats (date) used in each column
+* Consistent names, codes, formats (date) used in each column
 * Data are all in one table, which is much easier for a statistical program to work with than multiple small tables which each require human intervention]
 
 
@@ -89,7 +96,7 @@ This shows the same data entered in a way that would make it easy to understand 
 The data are not entered in separate blocks arrayed in a single worksheet.  They are entered in one table with columns defined by variables Date, Site, Plot, Species, and Weight, Adult, and Comments that are recorded for each sampling event.  
 
 The columns of data have consistent types.   Each column contains only numbers, dates, or text.
-There are consistent names, codes, and formats used in each column.  For instance, all dates are in the same format (mm/dd/yyyy), and there are no typos in the Site Names.  Species are all referred to by standard codes.  Therefore, if the user wanted to subset the data for species = `PERO`, they could easily filter the file for just those data.  Additionally,  there are only numeric data in the Weight column, so a statistical program or Excel could readily calculate statistics on this column.    Preparing metadata for this file would also be straightforward.   
+There are consistent names, codes, and formats used in each column.  For instance, all dates are in the same format (yyyy/mm/dd), and there are no typos in the Site Names.  Species are all referred to by standard codes.  Therefore, if the user wanted to subset the data for species = `PERO`, they could easily filter the file for just those data.  Additionally,  there are only numeric data in the Weight column, so a statistical program or Excel could readily calculate statistics on this column.    Preparing metadata for this file would also be straightforward.   
 
 
 ---
@@ -99,8 +106,8 @@ There are consistent names, codes, and formats used in each column.  For instanc
 .full-width[
 * Create descriptive column names without spaces or special characters
   * `Soil T30` to `Soil_Temp_30cm`
-  * `Species-Code` to "Species_Code (Avoid using -,+,*,^ in column names. Some software may interpret these symbols as an operator)"
-* Use a descriptive file name.  For instance, a file named `SEV_SmallMammalData_v.5.25.2010.csv` indicates the project the data is associated with (SEV),  the theme of the data (SmallMammalData) and also when this version of the data was created (v.5.25.2010).   This name is much more helpful than a file named mydata.xls.]  
+  * `Species-Code` to `Species_Code` (Avoid using -,+,*,^ in column names. Some software may interpret these symbols as an operator)
+* Use a descriptive file name.  For instance, a file named `SEV_SmallMammalData_v20100525.csv` indicates the project the data is associated with (`SEV`),  the theme of the data (`SmallMammalData`) and also when this version of the data was created (`v20100525`).   This name is much more helpful than a file named `mydata.xls`.]  
 
 
 
@@ -117,7 +124,7 @@ One best practice in data entry is to create descriptive column names without sp
 * Preferably leave field empty (NULL = no value)
 * In numeric fields, use a distinct value such as 9999 to indicate a missing value 
 * In text fields, use NA (“Not Applicable” or “Not Available”)
-* Use Data flags in a separate column to qualify missing value
+* Use data flags in a separate column to qualify missing value
 ]
 
 ![sheet4](images/pde4.png)
@@ -151,7 +158,7 @@ A best practice is to enter complete lines of data, so that the data are sorted 
 * For the long term, store data in a consistent format that can be read well in to the future and that can be used by any application now or in the future 
 * Appropriate file types include:
   * Non-proprietary: use an open, documented standard 
-  * Common usage by research community: Standard representation (ASCII, Unicode) 
+  * Common usage by research community: standard representation (ASCII, Unicode) 
   * Unencrypted 
   * Uncompressed
 * ASCII formatted files are likely to be readable into the future
@@ -172,13 +179,11 @@ Archiving your data publicly will require that it be stored in a non-proprietary
 ---
 
 ## Data Entry Tools
+Two common tools: Google Docs, Excel
 
-.full-width[
-* Two common tools: Google Docs, Excel
+
+.center[![sheet4](images/rsz_pde6a.png)
 ]
-
-![sheet4](images/pde6a.png)
-
 
 ???
 * Data entry tools typically perform data validation which allows you to control the kind of information that is entered. With data validation, you can:
@@ -190,20 +195,24 @@ Archiving your data publicly will require that it be stored in a non-proprietary
 
 ## Google Docs Forms
 
-![sheet4](images/pde7a.png)
+.center[![sheet4](images/pde7a.png)
+]
 
 ???
-This is an example of a data entry form created in Googledocs.  Such forms are easy to create, and free.   Here, a form field is being created that will allow the user to select from three locations where data were collected.   In practice, GoogleDocs work best for entering survey data, or entering lots of text data.  
+This is an example of a data entry form created in Google docs.  Such forms are easy to create, and free.   Here, a form field is being created that will allow the user to select from three locations where data were collected.   In practice, GoogleDocs work best for entering survey data, or entering lots of text data.  
 
 The advantages to using a data entry form, as opposed to entering data directly in to a spreadsheet, is that the form can enforce data entry rules – that is, you can create a pick-list of items for a user to select from.  That way, you have consistent info being entered, as a user will always enter Deep Well, instead of DW.    
 
 ---
-## Google Docs Spreadsheet
 
-![sheet4](images/pde8.png)
+## Google Docs Forms 
+
+.center[![sheet5](images/pde8.png)
+]
 
 ???
-* Data entered into a Google doc form is stored in a spreadsheet.  
+Google Forms can feed into a spreadsheet
+
 
 ---
 
@@ -231,12 +240,12 @@ Here is another example of data validation using Excel.  Height has been defined
 .one-half[
 * Great for charts, graphs, calculations
 * Flexible about cell content type—cells in same column can contain numbers or text
-** Easy to use – but harder to maintain as complexity and size of data grows
+* Easy to use – but harder to maintain as complexity and size of data grows
 ]
 
 .one-half[
 * Easy to query to select portions of data
-* Data fields are typed – For example, only integers are allowed in integer fields
+* Data fields are typed – for example, only integers are allowed in integer fields
 * Columns cannot be sorted independently of each other
 * Steeper learning curve than a spreadsheet
 ]
@@ -273,7 +282,7 @@ Database features includes explicit control over data types and has the advantag
 ![sheet4](images/pde13.png)
 
 ???
-Relationships can be defined between two sets of data or in this example between two tables.  Suppose that you have two tables used in the plant phenology study, one for observations and one for sites, and you want a table that contains both observations and the latitude and longitude of your sites.   Because both tables contain Site info, they can be joined to create a table containing the info you want.   
+Relationships can be defined between two sets of data or in this example between two tables. Suppose that you have two tables used in the plant phenology study, one for observations and one for sites, and you want a table that contains both observations and the latitude and longitude of your sites.  Because both tables contain Site info, they can be joined to create a table containing the info you want.   
 
 
 
@@ -309,7 +318,9 @@ The second select statement, returns all records from table SoilTemp where treat
 * Choose a data entry method that allows some validation of data as it is entered
 * Consider investing time in learning how to use a database if datasets are large or complex]
 
-class:center ![sheet16](images/pde16.png)
+.center[![sheet16](images/pde16.png)
+]
+
 
 ???
 Be aware of best practices when designing data file structures. Choose a data entry method that allows validation of data entered and be sure to invest time in learning how to use a database especially if the dataset are large or complex. 
@@ -320,8 +331,8 @@ Be aware of best practices when designing data file structures. Choose a data en
 
 .full-width[ 
 Consider trying one of these:
-  * Personal, single-user databases can be developed in MS Access, which is stored as a file on the user’s computer.  MS Access comes with easy GUI tools to create databases, run queries, and write reports.   
-  * A more robust database that is free, accommodates multiple users and will run on Windows or Linux is MySQL.   GUI interfaces for MySQL include phpMyadmin (free) and Navicat (inexpensive).] 
+  * Personal, single-user databases can be developed in MS Access, which is stored as a file on the user’s computer. MS Access comes with easy GUI tools to create databases, run queries, and write reports
+  * A more robust database that is free, accommodates multiple users and will run on Windows or Linux is MySQL. GUI interfaces for MySQL include phpMyadmin (free) and Navicat (inexpensive)] 
   
 ---
 
@@ -374,7 +385,7 @@ At times you will need to combine multiple datasets into a superset in order to 
   * Revisit the data life cycle to ensure the new dataset is properly documented, validated, and preserved
 * Use reproducible workflows
   * Enable transparency and reproducibility in the integration process
-  * Ensure others understand and can evaluate your decision making process.
+  * Ensure others understand and can evaluate your decision making process
   * Automate the integration as much as possible, especially when integrating many or large datasets]
 
 ---
@@ -400,7 +411,7 @@ At times you will need to combine multiple datasets into a superset in order to 
 * Options include SAS, SPSS, R, and Matlab (not free)
     * SAS:  Has comprehensive support
     * SPSS:  Has a user-friendly GUI
-    * Matlab: Analysis and Visualization platform that has “toolboxes” available for different disciplines, such as modeling or genomic analyses]
+    * Matlab: Analysis and visualization platform that has “toolboxes” available for different disciplines, such as modeling or genomic analyses]
 
 ---
 
@@ -421,7 +432,7 @@ At times you will need to combine multiple datasets into a superset in order to 
 
 .full-width[
 * Tools such as (but not limited to) spreadsheet tools such as MS Excel and relational databases (MS Access, MySQL, and more) can provide structure, flexibility and potential for working more easily with datasets but also require planning
-* Selection of a database or spreadsheet tool depends on the relationships between the data, and how it will be used, as well as other considerations re: time, resources, output.
+* Selection of a database or spreadsheet tool depends on the relationships between the data, and how it will be used, as well as other considerations re: time, resources, output
 ]
 ---
 
@@ -431,7 +442,7 @@ At times you will need to combine multiple datasets into a superset in order to 
 * Maintaining provenance (a trail of custody and decisions) is important when integrating more than one dataset
 * Documenting and understanding context and relationships, as well as changes is crucial when creating a new dataset (any time you combine two or more disparate datasets)
 * Create a transparent, reproducible workflow
-* Make sure to provide proper attribution and citation to all resources, including the original dataset. 
+* Make sure to provide proper attribution and citation to all resources, including the original dataset
 * Tools such as R, Matlab, and others can be useful in establishing workflows and accessing datasets
 ]
 ---
@@ -439,18 +450,12 @@ At times you will need to combine multiple datasets into a superset in order to 
 
 ## About
 
-Participate in our GitHub repo: [https://dataoneorg.github.io/dataone_lessons/](https://dataoneorg.github.io/dataone_lessons/)
+Participate in our GitHub repo: [https://github.com/DataONEorg/Education](https://github.com/DataONEorg/Education)
 
 **Suggested citation:**
-DataONE Education Module: Data Management. DataONE. Retrieved November 12, 2016. From [https://dataoneorg.github.io/dataone_lessons/](https://dataoneorg.github.io/dataone_lessons/)
+DataONE Education Module: Data Entry and Manipulation. DataONE. Retrieved November 12, 2016. From [https://dataoneorg.github.io/Education/](https://dataoneorg.github.io/Education/)
 
 **Copyright license information:**
 No rights reserved; you may enhance and reuse for your own purposes.  We do ask that you provide appropriate citation and attribution to DataONE.
 
 ![CCBY0](images/ccpd.png)
----
-
-
-
-
-
